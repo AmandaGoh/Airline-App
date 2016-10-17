@@ -1,0 +1,20 @@
+body{
+  font-family: baker-signet-web, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.jumbotron{
+  background: rgb(7, 93, 240);
+  color: rgb(228, 153, 41);
+  padding-left: 10%;
+}
+
+.wrapper{
+  background: url("http://a.abcnews.com/images/Politics/GTY_airplane_sr_131211_16x9_992.jpg");
+  background-size: cover;
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  height: 40%;
+}

@@ -1,0 +1,71 @@
+<%# <div class = "container one">%>
+
+<% include partials/header.ejs %>
+
+<%# </div>%>
+
+<div class = "wrapper">
+
+<h2>Flight Selection</h2>
+
+<form method="post" action="/booking">
+
+<div class = "row">
+  <div class='col-sm-3'>
+      <div class="form-group">
+        <label for="location_from">From: </label>
+        <select class="form-control" id="location_from" name= "flight[locationFrom]">
+          <option>Singapore</option>
+          <option>Hong Kong</option>
+          <option>Japan</option>
+          <option>Australia</option>
+        </select>
+      </div>
+  </div>
+
+  <div class='col-sm-3'>
+    <div class="form-group">
+      <label for="location_to">To: </label>
+      <select class="form-control" id="location_to" name= "flight[locationTo]">
+        <option>Singapore</option>
+        <option>Hong Kong</option>
+        <option>Japan</option>
+        <option>Australia</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class = "row">
+  <div class='col-sm-6'>
+    <div class="form-group">
+      <label for="date">Travel Date: </label>
+        <div class='input-group date' id='datetimepicker1'>
+          <input type="date" class="form-control" name= "flight[travelDate]">
+          <span class="input-group-addon">
+          <span class="glyphicon glyphicon-calendar"></span>
+          </span>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class = "row">
+  <div class='col-sm-6'>
+    <div class="form-group">
+      <label for="date">Return Date: </label>
+        <div class='input-group date' id='datetimepicker1'>
+          <input type="date" class="form-control" name= "flight[returnDate]">
+          <span class="input-group-addon">
+          <span class="glyphicon glyphicon-calendar"></span>
+          </span>
+        </div>
+    </div>
+  </div>
+</div>
+
+<button type="submit" class="btn btn-default">Search</button>
+
+</form>
+
+</div>

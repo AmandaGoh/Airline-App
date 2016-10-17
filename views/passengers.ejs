@@ -1,23 +1,71 @@
 <% include partials/header.ejs %>
 
-<h2>Passenger Details</h2>
+<div class= "container">
+<h2>Confirm your booking</h2>
 
-<form method="post" action="/passengers">
-  <div class="form-group">
-    <label for="name">Name: </label>
-    <input type="text" class="form-control" id="name" placeholder="Your Name" name= "newpassenger[name]">
+<h3>Passenger Details</h3>
+
+<form method="post" action="/booking/details">
+
+<div class= "row">
+    <div class = "col-sm-4">
+      <div class="form-group">
+        <label for="name">Name: </label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name" name= "passenger[name]">
+      </div>
   </div>
-  <div class="form-group">
-    <label for="number">Contact Number: </label>
-    <input type="number" class="form-control" id="contactno" placeholder="Your Mobile Number" name= "newpassenger[contactno]">
+  <div class='col-sm-1'>
+      <div class="form-group">
+        <label for="gender">Gender: </label>
+        <select class="form-control" id="gender" name= "passenger[gender]">
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
   </div>
-  <div class="form-group">
-    <label for="email">Email: </label>
-    <input type="email" class="form-control" id="email" placeholder="Your Email" name= "newpassenger[email]">
+</div>
+<div class= "row">
+  <div class = "col-sm-5">
+    <div class="form-group">
+      <label for="dob">Date of Birth: </label>
+      <input type="date" class="form-control" id="dob" placeholder="Your Date of Birth" name= "passenger[dob]">
+    </div>
   </div>
-  <div class="form-group">
-    <label for="number">Membership Number: </label>
-    <input type="number" class="form-control" id="membershipno" placeholder="Your Membership No" name= "newpassenger[membershipno]">
+</div>
+<div class= "row">
+  <div class = "col-sm-5">
+    <div class="form-group">
+      <label for="number">Contact Number: </label>
+      <input type="number" class="form-control" id="contactno" placeholder="Your Mobile Number" name= "passenger[contactno]">
+    </div>
   </div>
-  <button type="submit" class="btn btn-default">Submit</button>
+</div>
+<div class= "row">
+  <div class = "col-sm-5">
+    <div class="form-group">
+      <label for="email">Email: </label>
+      <input type="email" class="form-control" id="email" placeholder="Your Email" name= "passenger[email]">
+    </div>
+  </div>
+</div>
+<div class= "row">
+  <div class = "col-sm-5">
+    <div class="form-group">
+      <label for="passport">Passport Number: </label>
+      <input type="text" class="form-control" id="passport" placeholder="Your Passport No" name= "passenger[passportno]">
+    </div>
+  </div>
+</div>
+<div class= "row">
+  <div class = "col-sm-5">
+    <div class="form-group">
+      <label for="number">Membership Number: </label>
+      <input type="number" class="form-control" id="membershipno" placeholder="Your Membership No" name= "passenger[membershipno]">
+    </div>
+  </div>
+</div>
+
+<button type="submit" class="btn btn-default">Submit</button>
 </form>
+
+</div>
